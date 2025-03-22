@@ -1,0 +1,19 @@
+{
+  "objects": [
+    {
+      "type": "plane",
+      "scale": [10, 1, 10]
+    },
+    {
+      "type": "cube",
+      "position": [0, 2, 0]
+    }
+  ],
+  "lights": [
+    {
+      "position": [4, 4, 4],
+      "target": [10, 10, 10],
+      "castsShadows": true
+    }
+  ]
+}

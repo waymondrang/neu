@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{e4e6002a-289a-4d37-a512-88e6df0120f9}</ProjectGuid>
+    <RootNamespace>engine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)/bin/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>$(SolutionDir)/bin/intermediates/$(Platform)/$(Configuration)/</IntDir>
+    <IncludePath>$(ProjectDir)include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)/bin/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>$(SolutionDir)/bin/intermediates/$(Platform)/$(Configuration)/</IntDir>
+    <IncludePath>$(ProjectDir)include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)/bin/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>$(SolutionDir)/bin/intermediates/$(Platform)/$(Configuration)/</IntDir>
+    <IncludePath>$(ProjectDir)include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)/bin/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>$(SolutionDir)/bin/intermediates/$(Platform)/$(Configuration)/</IntDir>
+    <IncludePath>$(ProjectDir)include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)src\imgui;$(ProjectDir)src;$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\raymond\Documents\projects\neu engine\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;tinyplyd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)src\imgui;$(ProjectDir)src;$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\raymond\Documents\projects\neu engine\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;tinyplyd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)src\imgui;$(ProjectDir)src;$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\raymond\Documents\projects\neu engine\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;tinyplyd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)src\imgui;$(ProjectDir)src;$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\raymond\Documents\projects\neu engine\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;tinyplyd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Animation.cpp" />
+    <ClCompile Include="src\camera\camera.cpp" />
+    <ClCompile Include="src\camera\FPSCamera.cpp" />
+    <ClCompile Include="src\application.cpp" />
+    <ClCompile Include="src\glad.c" />
+    <ClCompile Include="src\imgui_helper.cpp" />
+    <ClCompile Include="src\imgui\imgui.cpp" />
+    <ClCompile Include="src\imgui\imgui_demo.cpp" />
+    <ClCompile Include="src\imgui\imgui_draw.cpp" />
+    <ClCompile Include="src\imgui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="src\imgui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="src\imgui\imgui_tables.cpp" />
+    <ClCompile Include="src\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="src\InputManager.cpp" />
+    <ClCompile Include="src\Light.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Mesh.cpp" />
+    <ClCompile Include="src\object\Cloth.cpp" />
+    <ClCompile Include="src\object\Cube.cpp" />
+    <ClCompile Include="src\object\Joint.cpp" />
+    <ClCompile Include="src\object\ParticleEmitter.cpp" />
+    <ClCompile Include="src\object\Plane.cpp" />
+    <ClCompile Include="src\object\Skeleton.cpp" />
+    <ClCompile Include="src\object\Skin.cpp" />
+    <ClCompile Include="src\particle\LinkedListParticle.cpp" />
+    <ClCompile Include="src\particle\Particle.cpp" />
+    <ClCompile Include="src\particle\ParticleContact.cpp" />
+    <ClCompile Include="src\particle\ParticleContactResolver.cpp" />
+    <ClCompile Include="src\particle\ParticleForceGenerator.cpp" />
+    <ClCompile Include="src\particle\ParticleForceRegistry.cpp" />
+    <ClCompile Include="src\render\framebuffer.cpp" />
+    <ClCompile Include="src\Shader.cpp" />
+    <ClCompile Include="src\ShaderManager.cpp" />
+    <ClCompile Include="src\utility\Logger.cpp" />
+    <ClCompile Include="src\utility\ModelLoader.cpp" />
+    <ClCompile Include="src\utility\Profiler.cpp" />
+    <ClCompile Include="src\utility\Tokenizer.cpp" />
+    <ClCompile Include="src\WindowManager.cpp" />
+    <ClCompile Include="src\World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\glad\glad.h" />
+    <ClInclude Include="include\glfw\glfw3.h" />
+    <ClInclude Include="include\glfw\glfw3native.h" />
+    <ClInclude Include="include\imconfig.h" />
+    <ClInclude Include="include\imgui.h" />
+    <ClInclude Include="include\imgui_impl_glfw.h" />
+    <ClInclude Include="include\imgui_impl_opengl3.h" />
+    <ClInclude Include="include\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="include\imgui_internal.h" />
+    <ClInclude Include="include\imstb_rectpack.h" />
+    <ClInclude Include="include\imstb_textedit.h" />
+    <ClInclude Include="include\imstb_truetype.h" />
+    <ClInclude Include="include\json\json.hpp" />
+    <ClInclude Include="include\KHR\khrplatform.h" />
+    <ClInclude Include="include\math\Matrix.h" />
+    <ClInclude Include="include\math\Quaternion.h" />
+    <ClInclude Include="include\math\Vector.h" />
+    <ClInclude Include="include\tinyply\tinyply.h" />
+    <ClInclude Include="src\Animation.h" />
+    <ClInclude Include="src\camera\camera.h" />
+    <ClInclude Include="src\camera\FPSCamera.h" />
+    <ClInclude Include="src\core.h" />
+    <ClInclude Include="src\flexception.h" />
+    <ClInclude Include="src\application.h" />
+    <ClInclude Include="src\GameObject.h" />
+    <ClInclude Include="src\imgui_helper.h" />
+    <ClInclude Include="src\imgui\imconfig.h" />
+    <ClInclude Include="src\imgui\imgui.h" />
+    <ClInclude Include="src\imgui\imgui_impl_glfw.h" />
+    <ClInclude Include="src\imgui\imgui_impl_opengl3.h" />
+    <ClInclude Include="src\imgui\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="src\imgui\imgui_internal.h" />
+    <ClInclude Include="src\imgui\imstb_rectpack.h" />
+    <ClInclude Include="src\imgui\imstb_textedit.h" />
+    <ClInclude Include="src\imgui\imstb_truetype.h" />
+    <ClInclude Include="src\InputManager.h" />
+    <ClInclude Include="src\Inputs.h" />
+    <ClInclude Include="src\Light.h" />
+    <ClInclude Include="src\Mesh.h" />
+    <ClInclude Include="src\NarrowCollision.h" />
+    <ClInclude Include="src\object\Cloth.h" />
+    <ClInclude Include="src\object\Cube.h" />
+    <ClInclude Include="src\object\Joint.h" />
+    <ClInclude Include="src\object\ParticleEmitter.h" />
+    <ClInclude Include="src\object\Plane.h" />
+    <ClInclude Include="src\object\Skeleton.h" />
+    <ClInclude Include="src\object\Skin.h" />
+    <ClInclude Include="src\particle\LinkedListParticle.h" />
+    <ClInclude Include="src\particle\Particle.h" />
+    <ClInclude Include="src\particle\ParticleContact.h" />
+    <ClInclude Include="src\particle\ParticleContactResolver.h" />
+    <ClInclude Include="src\particle\ParticleForceGenerator.h" />
+    <ClInclude Include="src\particle\ParticleForceRegistry.h" />
+    <ClInclude Include="src\render\framebuffer.h" />
+    <ClInclude Include="src\Shader.h" />
+    <ClInclude Include="src\ShaderManager.h" />
+    <ClInclude Include="src\utility\Logger.h" />
+    <ClInclude Include="src\utility\ModelLoader.h" />
+    <ClInclude Include="src\utility\Profiler.h" />
+    <ClInclude Include="src\utility\Tokenizer.h" />
+    <ClInclude Include="src\WindowManager.h" />
+    <ClInclude Include="src\World.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="assets\scene.neu" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

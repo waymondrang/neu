@@ -1,0 +1,39 @@
+{
+  "objects": [
+    {
+      "type": "plane",
+      "scale": [100, 1, 100]
+    },
+    {
+      "type": "particleEmitter",
+      "name": "volcano",
+      "particleCreationRate": 1000.0,
+      "initialPosition": [0, 5, 0],
+      "initialPositionVariance": [0, 0, 0],
+      "initialVelocity": [0, 8, 0],
+      "initialVelocityVariance": [5, 4, 5],
+      "initialLifeSpan": 2.5,
+      "initialLifeSpanVariance": 1.0,
+      "particleColor": [1.0, 0.412, 0.0, 1.0],
+      "particleColorRedVariance": 0.0,
+      "particleColorGreenVariance": 0.3,
+      "particleColorBlueVariance": 0.3,
+      "particleColorAlphaVariance": 0.0,
+      "particleRadius": 0.10,
+      "particleRadiusVariance": 0.2,
+      "particleRadiusLowerBound": 0.05,
+      "gravity": [0, -9.81, 0],
+      "airDensity": 1.0,
+      "dragCoefficient": 0.1,
+      "collisionElasticity": 0.2,
+      "collisionFriction": 0.4
+    }
+  ],
+  "lights": [
+    {
+      "position": [4, 4, 4],
+      "target": [0, 0, 0],
+      "castsShadows": false
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "objects": [
+    {
+      "type": "plane",
+      "scale": [100, 1, 100]
+    },
+    {
+      "type": "particleEmitter",
+      "name": "smoke",
+      "particleCreationRate": 500.0,
+      "initialPosition": [0, 2, 0],
+      "initialPositionVariance": [0.5, 0.5, 0.5],
+      "initialVelocity": [0, 2, 0],
+      "initialVelocityVariance": [1, 0.2, 1],
+      "initialLifeSpan": 4,
+      "initialLifeSpanVariance": 1.0,
+      "particleRadius": 0.2,
+      "particleRadiusVariance": 0.2,
+      "particleRadiusLowerBound": 0.05,
+      "particleColor": [0.6, 0.6, 0.6, 1.0],
+      "particleColorRedVariance": 0.0,
+      "particleColorGreenVariance": 0.0,
+      "particleColorBlueVariance": 0.0,
+      "particleColorAlphaVariance": 0.0,
+      "particleColorUniformVariance": 0.2,
+      "gravity": [0, 0, 0],
+      "airDensity": 1.0,
+      "dragCoefficient": 0.03,
+      "collisionElasticity": 0.2,
+      "collisionFriction": 0.4
+    }
+  ],
+  "lights": [
+    {
+      "position": [4, 4, 4],
+      "target": [0, 0, 0],
+      "castsShadows": false
+    }
+  ]
+}

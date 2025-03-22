@@ -1,0 +1,8 @@
+{
+  "objects": [
+    {
+      "type": "plane",
+      "scale": [10, 1, 10]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "objects": [
+    {
+      "type": "plane",
+      "scale": [100, 1, 100]
+    },
+    {
+      "type": "particleEmitter",
+      "name": "snow",
+      "particleCreationRate": 1000.0,
+      "initialPosition": [0, 20, 0],
+      "initialPositionVariance": [10, 0, 10],
+      "initialVelocity": [0, -2, 0],
+      "initialVelocityVariance": [3, 0, 3],
+      "initialLifeSpan": 16.0,
+      "initialLifeSpanVariance": 0.0,
+      "particleColor": [1.0, 1.0, 1.0, 1.0],
+      "particleColorRedVariance": 0.02,
+      "particleColorGreenVariance": 0.02,
+      "particleColorBlueVariance": 0.02,
+      "particleColorAlphaVariance": 0.0,
+      "particleColorUniformVariance": 0.4,
+      "particleRadius": 0.06,
+      "particleRadiusVariance": 0.02,
+      "particleRadiusLowerBound": 0.04,
+      "gravity": [0, -9.81, 0],
+      "airDensity": 1.0,
+      "dragCoefficient": 8.0,
+      "collisionElasticity": 0.12,
+      "collisionFriction": 0.7
+    }
+  ],
+  "lights": [
+    {
+      "position": [4, 4, 4],
+      "target": [0, 0, 0],
+      "castsShadows": false
+    }
+  ]
+}
