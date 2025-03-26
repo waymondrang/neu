@@ -34,3 +34,9 @@ Neu relies on the following libraries:
 - GLFW
 - Jolt Physics
 - ImGui
+
+# Screenshots
+
+![Rigid Bodies with Visible AABB](/assets/img/neu_refactor.png)
+
+![Imported Mesh with Skeleton and Multiple Lights](/assets/img/neu_multiple_lights.png)
