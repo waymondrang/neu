@@ -3,7 +3,7 @@
 > [!IMPORTANT]
 > This project is a work-in-progress. The engine is currently adopting an entity-component system and is missing several features that are being re-implemented.
 
-Neu aims to be a performant, data-driven 3D C++ game engine.
+Neu aims to be a performant, data-driven 3D C++ rendering engine.
 
 # Features
 
@@ -25,6 +25,7 @@ Neu aims to be a performant, data-driven 3D C++ game engine.
 - [ ] Asset Import
 - [ ] Real-Time Entity Editor (Previously Game Object Editor)
 - [ ] API Documentation and Samples
+- [ ] Post-Processing Effects
 
 # Libraries
 
